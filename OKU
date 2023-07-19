@@ -1,8 +1,16 @@
-main.exe dosyasını indirin ve kaydedin.
+Python Telegram Dosya Aktarımı Rehberi
+Bu rehber, Python programlama dili kullanarak Telegram'da dosya aktarımı yapmak isteyenler için hazırlanmıştır. Rehberde, telethon kütüphanesini kullanarak, bir hedef gruba dosyaların nasıl aktarılacağı anlatılmaktadır.
 
-ayarlar.ini dosyasını oluşturun veya indirin ve kaydedin. Bu dosya .exe dosyası ile aynı dizinde olmalıdır.
+Gereksinimler
+Programı çalıştırmak için, öncelikle telethon kütüphanesini yüklemeniz gerekiyor. Bunun için, aşağıdaki komutu kullanabilirsiniz:
 
-ayarlar.ini dosyasını bir metin düzenleyicisi ile açın ve aşağıdaki bilgileri girin:
+pip install telethon
+
+Programın çalışması için asyncio ve configparser kütüphanelerine de ihtiyaç var. Ancak, bu kütüphaneler Python'un standart kütüphaneleri arasında yer aldığından, kullanıcıların bunları ayrıca yüklemelerine gerek yoktur.
+
+Ayarlar
+Programın çalışması için, ayarlar.ini adlı bir dosya oluşturmanız gerekiyor. Bu dosya, .exe dosyasının aynı dizininde olmalıdır. ayarlar.ini dosyasında yer alması gereken bilgiler şunlardır:
+
 [telegram]
 api_id = <API kimlik bilgisi>
 api_hash = <API kimlik doğrulama kodu>
@@ -13,11 +21,12 @@ id = <hedef grup kimlik numarası>
 [source_entities]
 id_1 = <kaynak grup kimlik numarası 1>
 id_2 = <kaynak grup kimlik numarası 2>
-
 api_id ve api_hash bilgilerini Telegram API sayfasından elde edebilirsiniz. target_entity ve source_entities kısımlarına, hedef ve kaynak grup kimlik numaralarınızı girin.
 
+Programı Çalıştırma
+main.exe dosyasını indirin ve kaydedin.
+ayarlar.ini dosyasını oluşturun veya indirin ve kaydedin. Bu dosya .exe dosyası ile aynı dizinde olmalıdır.
+ayarlar.ini dosyasını bir metin düzenleyicisi ile açın ve yukarıdaki adımları takip ederek, gerekli bilgileri girin.
 ayarlar.ini dosyasını kaydedin ve kapatın.
-
 main.exe dosyasını çift tıklayarak çalıştırın.
-
 Program, dosyaların hedef gruba başarıyla aktarıldığını belirten bir mesaj gösterene kadar çalışmaya devam edecektir.
