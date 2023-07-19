@@ -1,0 +1,23 @@
+main.exe dosyasını indirin ve kaydedin.
+
+ayarlar.ini dosyasını oluşturun veya indirin ve kaydedin. Bu dosya .exe dosyası ile aynı dizinde olmalıdır.
+
+ayarlar.ini dosyasını bir metin düzenleyicisi ile açın ve aşağıdaki bilgileri girin:
+[telegram]
+api_id = <API kimlik bilgisi>
+api_hash = <API kimlik doğrulama kodu>
+
+[target_entity]
+id = <hedef grup kimlik numarası>
+
+[source_entities]
+id_1 = <kaynak grup kimlik numarası 1>
+id_2 = <kaynak grup kimlik numarası 2>
+
+api_id ve api_hash bilgilerini Telegram API sayfasından elde edebilirsiniz. target_entity ve source_entities kısımlarına, hedef ve kaynak grup kimlik numaralarınızı girin.
+
+ayarlar.ini dosyasını kaydedin ve kapatın.
+
+main.exe dosyasını çift tıklayarak çalıştırın.
+
+Program, dosyaların hedef gruba başarıyla aktarıldığını belirten bir mesaj gösterene kadar çalışmaya devam edecektir.
